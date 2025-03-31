@@ -9,7 +9,7 @@ st.set_page_config(page_title="Gasoline Price Dashboard", layout="wide")
 @st.cache_data
 
 def load_data():
-    df = pd.read_csv("/Users/aidynbekmussa/Desktop/Managing_Data/final_project/gasoline_prices.csv")
+    df = pd.read_csv("gasoline_prices.csv")
     df["period"] = pd.to_datetime(df["period"])
     return df
 
