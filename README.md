@@ -51,54 +51,7 @@ A public-facing gasoline price dashboard that helps:
   - $ and % change with emojis
 - **Data download** button (CSV)
 
----
 
-## 🔄 Pipeline Flow
-1. **Extract**: Pull data from EIA API
-2. **Transform**: Clean, format, and merge series
-3. **Load**: Save into PostgreSQL and CSV
-4. **Visualize**: Launch interactive dashboard
 
----
 
-## 📁 Project Structure
-```
-/streamlit_app
-    ├── app.py              # Main dashboard logic
-    ├── etl.py              # EIA API connector and data prep
-    ├── gasoline_prices.csv # Cached dataset
-    └── README.md          # Project description
-```
-
----
-
-## 🚀 How to Run
-1. Clone repo
-2. Install requirements:
-```bash
-pip install -r requirements.txt
-```
-3. Run Streamlit:
-```bash
-streamlit run app.py
-```
-4. Visit `http://localhost:8501`
-
----
-
-## 🚧 Future Work
-- Integrate daily fuel pricing from mobile apps
-- Enable predictive modeling with ML
-- Add user-uploaded data blending
-
----
-
-## 🚀 Authors
-- Aidyn Bekmussa (Team Lead, Backend, Streamlit)
-- [Add your team members here if applicable]
-
----
-
-## ✨ License
-MIT License - Open for academic and educational use.
 
